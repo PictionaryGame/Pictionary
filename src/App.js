@@ -1,30 +1,24 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Canvas from './Components/Canvas';
+import Nav from './Components/Nav';
+import selectBoard from './Components/selectBoard';
+import Boardroom from './Components/Boardroom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Pictionary</h1>
-        <Canvas />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hello
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+      <Router>
+        <div className="main">
+          <Route exact path="/" component={Nav} />
+          <div className="gameboard">
+            <Route exact path="/" component={selectBoard} />
+            <Route path="/board1" component={Boardroom} />
+          </div>
+        </div>
+      </Router>
+    )
   }
 }
 

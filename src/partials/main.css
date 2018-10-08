@@ -1,0 +1,16 @@
+.main {
+  background: red;
+  height: 100vh;
+  width: 20%; }
+  .main ul {
+    margin: 0; }
+
+.nav1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .nav1 .list1 {
+    margin-top: 30px; }
+  .nav1 .list2 {
+    margin-bottom: 30px; }

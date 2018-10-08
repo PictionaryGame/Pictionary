@@ -1,0 +1,39 @@
+.main {
+    height: 100vh;
+    display: flex;
+    .navbar {
+        background: red;
+        width: 100%;
+        .nav1 {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .list1 {
+                margin-top: 30px;
+                li {
+                    list-style-type: none;
+                    padding: 5px 0;
+                }
+            }
+            .list2 {
+                margin-bottom: 30px;
+                li {
+                    list-style-type: none;
+                    padding: 5px 0;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .gameboard {
+        height: 100vh;
+        width: 80%;
+        .select {
+            text-align: center;
+        }
+    }
+}
