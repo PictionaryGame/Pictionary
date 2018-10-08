@@ -38,14 +38,12 @@ class Canvas extends Component {
         previousY = y;
       }
     });
-
   }
-
     render() {
         return (
           <canvas 
-            height="500" 
-            width="500" 
+            height="600" 
+            width="1100" 
             id="canvas">
           </canvas>
         );
